@@ -8,16 +8,22 @@ sidebarDark = #9400d3
 sidebarLight = #ba55d3
 marginCenter = auto auto
 //миксины
+borders(num, colorBorder)
+    border num solid colorBorder
 headerTheme(themeColor)
     height 90px
-    width 100%
+    width 98%
+    borders(1px, black)
     background themeColor
+    margin 1%
     &__title
         font-size fontHeader
         margin marginCenter
 sidebarTheme(themeColor)
     width 15%
     height inherit
+    borders(1px, black)
+    margin 1%
     flex 0 0 auto
     background themeColor
     &__title
@@ -36,7 +42,9 @@ html, body
     background-color #fff
 .header, .wrapper, .container, .content, .footer, .sidebar 
     display flex
-    flex-direction: row   
+    flex-direction: row 
+    justify-content space-around 
+    box-sizing border-box 
 .wrapper
     margin 0 auto
     flex-direction column
@@ -44,7 +52,7 @@ html, body
     max-width 1600px
     height 100%
 .header
-    headerTheme(headerDark)  
+    headerTheme(headerLight)  
 //код для варианте без миксинов  
 /*.header
     height 90px
@@ -56,19 +64,21 @@ html, body
 */
 .container
     flex-wrap nowrap
-    background-color #90ee90
     height 100%
     width 100%
 .content
     width 60%
     height inherit
+    margin 1%
+    borders(2px, black)
+    background-color #90ee90
     flex-direction column
     flex 1 1 auto
     &__text
         font-size fontContent
         margin marginCenter
 .sidebar 
-    sidebarTheme(sidebarDark)
+    sidebarTheme(sidebarLight)
 /*.sidebar
     width 15%
     height inherit
