@@ -1,0 +1,84 @@
+//переменные
+fontSidebar = 24px
+fontContent = 26px
+fontHeader = 28px
+headerDark = #000080
+headerLight = #00bfff
+sidebarDark = #9400d3
+sidebarLight = #ba55d3
+marginCenter = auto auto
+//миксины
+headerTheme(themeColor)
+    height 90px
+    width 100%
+    background themeColor
+    &__title
+        font-size fontHeader
+        margin marginCenter
+sidebarTheme(themeColor)
+    width 15%
+    height inherit
+    flex 0 0 auto
+    background themeColor
+    &__title
+        font-size fontSidebar        
+        margin marginCenter
+//код
+html, body
+    margin 0
+    padding 0
+    height 100%
+    width 100%
+    font-family Arial,sans-serif
+    font-size 14px
+    line-height 1.4
+    color #fff
+    background-color #fff
+.header, .wrapper, .container, .content, .footer, .sidebar 
+    display flex
+    flex-direction: row   
+.wrapper
+    margin 0 auto
+    flex-direction column
+    min-width 1024px
+    max-width 1600px
+    height 100%
+.header
+    headerTheme(headerDark)  
+//код для варианте без миксинов  
+/*.header
+    height 90px
+    width 100%
+    background headerLight
+    &__title
+        font-size fontHeader
+        margin marginCenter
+*/
+.container
+    flex-wrap nowrap
+    background-color #90ee90
+    height 100%
+    width 100%
+.content
+    width 60%
+    height inherit
+    flex-direction column
+    flex 1 1 auto
+    &__text
+        font-size fontContent
+        margin marginCenter
+.sidebar 
+    sidebarTheme(sidebarDark)
+/*.sidebar
+    width 15%
+    height inherit
+    flex 0 0 auto
+    background sidebarLight
+    &__title
+        font-size fontSidebar        
+        margin marginCenter
+*/        
+.sidebarLeft
+    order 0
+.sidebarRight
+    order 2

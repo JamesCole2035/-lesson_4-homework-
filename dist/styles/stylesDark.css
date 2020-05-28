@@ -1,0 +1,86 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #fff;
+}
+.header,
+.wrapper,
+.container,
+.content,
+.footer,
+.sidebar {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper {
+  margin: 0 auto;
+  flex-direction: column;
+  min-width: 1024px;
+  max-width: 1600px;
+  height: 100%;
+}
+.header {
+  height: 90px;
+  width: 100%;
+  background: #000080;
+}
+.header__title {
+  font-size: 28px;
+  margin: auto auto;
+}
+/*.header
+    height 90px
+    width 100%
+    background headerLight
+    &__title
+        font-size fontHeader
+        margin marginCenter
+*/
+.container {
+  flex-wrap: nowrap;
+  background-color: #90ee90;
+  height: 100%;
+  width: 100%;
+}
+.content {
+  width: 60%;
+  height: inherit;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.content__text {
+  font-size: 26px;
+  margin: auto auto;
+}
+.sidebar {
+  width: 15%;
+  height: inherit;
+  flex: 0 0 auto;
+  background: #9400d3;
+}
+.sidebar__title {
+  font-size: 24px;
+  margin: auto auto;
+}
+/*.sidebar
+    width 15%
+    height inherit
+    flex 0 0 auto
+    background sidebarLight
+    &__title
+        font-size fontSidebar        
+        margin marginCenter
+*/
+.sidebarLeft {
+  order: 0;
+}
+.sidebarRight {
+  order: 2;
+}

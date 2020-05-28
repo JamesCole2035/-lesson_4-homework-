@@ -1,0 +1,30 @@
+{
+  "name": "crt",
+  "version": "1.0.0",
+  "description": "web project on html and css preprocessor stylus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesCole2035/lesson_4-homework.git"
+  },
+  "keywords": [
+    "git",
+    "css",
+    "html",
+    "stylus",
+    "js",
+    "npm"
+  ],
+  "author": "Mikhail Bochkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesCole2035/lesson_4-homework/issues"
+  },
+  "homepage": "https://github.com/JamesCole2035/lesson_4-homework#readme",
+  "dependencies": {
+    "stylus": "^0.54.7"
+  }
+}
