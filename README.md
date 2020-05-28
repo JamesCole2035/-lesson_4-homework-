@@ -1,4 +1,4 @@
-# -lesson_4-homework-
+# lesson_4-homework
 html, js, stylus
 Сделал:
 1. репозиторий с readme
